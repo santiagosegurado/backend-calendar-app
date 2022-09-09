@@ -32,6 +32,6 @@ app.use("/api/auth", auth);
 app.use("/api/events", events)
 
 // Lo hago esuchar en el puerto
-app.listen(process.env.PORT, () => {
-  console.log(`Escuchando en puerto ${process.env.PORT}`);
+app.listen(process.env.PORT || process.env.PORT_PRODUCTION, () => {
+  console.log(`Escuchando en puerto ${process.env.PORT || process.env.PORT_PRODUCTION}`);
 });
