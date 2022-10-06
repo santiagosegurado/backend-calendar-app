@@ -126,12 +126,6 @@ const eliminarEvent = async(req, res) => {
     })
   }
 
-
-  res.json({
-    ok: true,
-    msg: "Ruta eliminarEvent",
-    id,
-  });
 };
 
 module.exports = {

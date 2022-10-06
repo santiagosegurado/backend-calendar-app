@@ -6,7 +6,7 @@ const isDate = (value, { req, location, path }) => {
     return false;
   }
 
-  const fecha = moment( value);
+  const fecha = moment(value);
   if (fecha.isValid()) {
     return true;
   
